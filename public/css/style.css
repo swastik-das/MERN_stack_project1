@@ -1,0 +1,184 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color:#CACFD2 ;
+    }
+    nav{
+     min-height:5rem;
+     background-color: black;
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+    
+    }
+    .nav_item{
+     display: flex;
+     color: blanchedalmond;
+      width:360px;
+      justify-content: space-around;
+      list-style:none;
+    }
+    .nav_item a{
+      text-decoration: none;
+      color: antiquewhite;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-weight: 600;
+    }
+    .nav_item a:hover{
+      color: blueviolet;
+    }
+    
+    .logo{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: blueviolet;
+    }
+    .box_txt{
+    height:250px ;
+    width:1000px;
+    background-color: none;
+    position: relative;
+    left:100px;
+    top: 20px;
+    }
+    .rig_txt{
+     position: relative;
+     top:50px;
+     text-align: center;
+     color: #273746 ;
+     opacity:0.6;
+    }
+    .explore{
+    position: relative;
+    left:380px;
+    width:200px;
+    height: 50px;
+     top: -20px;
+    font-size:15px;
+    font-weight: 500;
+    background-color:#273746 ;
+    color:white;
+    border-radius:30px;
+    }
+    .explore:hover{
+      background-color: blueviolet;
+      box-shadow: 0px 0px 20px 0px #AF7AC5 ;
+    }g
+    .body_c{
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px 0px #95A5A6;
+    }
+    .box_info{
+    margin-top:-30px;
+   margin-left:-50px;
+    width:1170px;
+    padding:20px;
+    background-color:#F2F3F4;
+    border-radius:9px;
+    }
+    .box_registson{
+      height:500px;
+      width: 100%;
+      background-color: white;
+  }
+  .container{
+      margin:20px auto;
+  }
+  .colordeep_1{
+      height:500px;
+      width:30%;
+   background-color:black;
+   animation:changecolor 10s infinite;
+  }
+  .colordeep_2{
+      height:500px;
+      width:70%;
+      background-color:whitesmoke;
+  }
+  .btn_rl{
+    position: relative;
+    left:400px;
+    top: 10px;
+    background-color:black;
+     height:40px;
+    width:30%;
+    border-radius:50px;
+    z-index:10000;
+  }
+  .solo{
+    padding:5px;
+ background-color:#2C3E50 ;
+ color: white;
+  }
+  .rol{
+  position: relative;
+  left:20px;
+  color:whitesmoke;
+  top:-35px;
+  }
+  .rler{
+    position:relative;
+    left: 30px;
+    height:230px;
+    width: 550px;
+  }
+  .login_go{
+  background-color:blueviolet ;
+  color: #F2F3F4;
+  border: none;
+  height:40px;
+  width:140px;
+  position: relative;
+  left: 230px;
+  cursor:pointer;
+  border-radius:40px;
+  }
+  .rol_back{
+      height:40px;
+      background-color:blueviolet;
+      position:relative;
+      width: 50%;
+      top:0px;
+      border-radius:30px;
+      cursor: pointer;
+       transition: 0.2s ease-in;
+  }
+  .box_from{
+   padding:20px;
+   width:38.3rem;
+   background-color:none;
+   position: relative;
+   top: 20px;
+  }
+  input[type="text"]{
+    border: none;
+    height:45px;
+  }
+  input[type="password"]{
+      border: none;
+      height:45px;
+    }
+    input[type="number"]{
+      border: none;
+      height:45px;
+    }
+    input[type="submit"]{
+        background-color: blueviolet;
+        color: white;
+    }
+    #rs{
+      cursor: pointer;
+    }
+    #ls{
+      cursor: pointer;
+    }
+ 
+    .login_form{
+        display:none;
+    }
+  .login_form{
+      padding:20px;
+      width:38.3rem;
+       height: 370px;
+   
+  }

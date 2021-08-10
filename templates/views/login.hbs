@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend login page b.com</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/images/favicon.png">
+     <style>
+    body{
+        background-color:#EAECEE ;
+    }
+  .box_mode{
+      padding: 150px;
+     width:40rem;
+     height:33rem;
+     background-color:white;
+     margin:0px auto;
+     margin-top: 40px;
+     border-radius:10px;
+ }
+ .logo{
+margin: 0px auto;
+height: 80px;
+width: 80px;
+position: relative;
+top:-40px;
+ }
+ input[type="text"]{
+     width:350px;
+     border-radius: none;
+ }
+ input[type="password"]{
+     width:350px;
+     border-radius:none;
+ }
+ input[type="submit"]{
+     width:80px;
+     border: none;
+     margin: auto;
+     background-color:blueviolet;
+     color: white;
+     width:200px;
+     border-radius:50px;
+    cursor:pointer;
+    
+ }
+
+     </style>
+</head>
+<body>
+       <div class="container"> 
+            <form action="/login" method="POST">
+        <div class="row  box_mode"> 
+            <img src="/images/DB.png" class="logo" alt="">
+   <div class="al_in_one"> 
+<div class="row"> 
+ <div class="col"> 
+ <input type="text" class="form-control" placeholder="Email" required name="Email">
+ </div>
+ <div class="w-100"></div>
+      <br>
+ <div class="col"> 
+       <span style="font-size:18px; position:absolute; top:-58px;left:330px;
+        color:#ABB2B9" >  <i class="fas fa-user"></i></i></span>
+    <input type="password" class="form-control" placeholder="Password" required name="password"> 
+    
+    </div>
+    <div class="w-100"></div>
+    <br>
+    
+    <div class="col"> 
+          <span style="font-size:18px; position:absolute; top:-58px;left:330px;
+        color:#ABB2B9 " > <i class="fas fa-lock"></i></span>
+       <input type="submit" class="form-control" >
+       </div>
+        <div class="w-100"></div>
+    <br>
+    <div class="col"> 
+       <p align="center" > <a href="" style="color:grey;opacity:0.4"> Forget password </a>   </p>
+        <p align="center" style="line-height:6px;">For take more support and help <a href="" style="opacity:0.9;">go to</a></p>
+       </div>
+
+</div>
+   </div>
+        </div>
+    </form>
+       </div>
+
+</body>
+</html>

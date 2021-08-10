@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Backend Regiter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="shortcut icon" href="/images/favicon.png">
+      <script>
+$(document).ready(function(){
+ $("#rs").click(function(){
+$(".rol_back").css({"left":"95px"})
+$(".all_from").css({"display":"none"})
+$(".login_form").css({"display":"inline"})
+$(".hps_msg").css({"display":"none"});
+ });
+ $("#ls").click(function(){
+$(".rol_back").css({"left":"0px"})
+$(".login_form").css({"display":"none"})
+$(".all_from").css({"display":"inline"})
+$(".hps_msg").css({"display":"inline"});
+ });
+});
+      </script>
+</head>
+<body>
+   {{>navbar}}
+<div class="container">
+<div  class="row box_registson"> 
+     <!-- col st1-->
+ <div class="col-lg-5 colordeep_1"> 
+ <img src="/images/block1.gif" alt="" height="420" width="420">
+  <div> 
+      <h3 style="color:white;opacity: 0.5;" align="center"> <font color="blueviolet"> Mernstack</font>  Register  </h3>
+      <p  style="color:white;font-size:11px;opacity: 0.4;" align="center"> we are providing all backEnd & middleware</p>
+  </div>
+ </div>
+        <!-- col end -->
+   <div class="col colordeep_2"> 
+    <span class="hps_msg" style="font-size:26px;position: relative; top:45px; left:17px;">Please Register The Form</span> 
+       <br> 
+ <div class="btn_rl"> 
+     <div class="rol_back"> 
+     </div>
+      <div class="rol"> 
+    <span id="ls"> Register</span>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <span id="rs"> Login </span>
+    </div>
+  </div>
+  <div class="box_from"> 
+  <div  class="all_from">
+       <form action="/register" method="POST">
+    <div class="row  "> 
+ <div class="col-sm-6"> 
+
+ <input type="text" name="firstname" class="form-control" placeholder="Firstname*" value="" required/>
+ </div>
+ <div class="col-sm-5"> 
+   <input type="text" name="lastname" class="form-control" placeholder="Lastname*" value=""/ required>
+   </div>
+   <div class="w-100"></div>
+    <br>
+   <div class="col-sm-6"> 
+
+    <input type="text" name="email" class="form-control" placeholder="Your Email*">
+    </div>
+   <div class="col-sm-5">
+    &nbsp;&nbsp;&nbsp;&nbsp;  <span>  <input class="form-check-input position-static" type="radio" name="gender" id="blankRadio1"  value="Male" aria-label="..." cheked/>
+     Male </span> 
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="form-check-input position-static" type="radio" name="gender" id="blankRadio1" value="Female" aria-label="..." required/>
+     Female </span>
+      </div>
+
+   <div class="w-100"></div>
+    <br>
+   <div class="col-sm-6"> 
+
+    <input type="text" name="number" class="form-control" placeholder="PhoneNumber" value=""/ required>
+    </div>
+   <div class="col-sm-5">
+
+    <input type="number" name="age" class="form-control" placeholder="Age*"  value=""/ required>
+   </div>
+
+   <div class="w-100"></div>
+    <br>
+   <div class="col-sm-6"> 
+
+    <input type="password" name="password" class="form-control" placeholder="Password*" value=""/ required>
+    </div>
+   <div class="col-sm-5">
+
+    <input type="password" name="comfirmpassword" class="form-control" placeholder="confirmPassword*" value=""/ required>
+   </div>
+   <div class="w-100"></div>
+    <br>
+     <div class="col-sm-8"> 
+
+     </div>
+     <div class="col-sm-3"> 
+   <input type="submit" class="form-control" value="register"/ >
+     </div>
+    </div>
+       </form>
+          <!-- from closed --> 
+  </div>
+  </div>
+
+  <div class="login_form "> 
+               <br>
+    <img src="/images/imgLonon.png"  class="rler"  alt="">
+  <a href="/login"> <button class="login_go"> Go For Login </button></a>
+   <br> 
+   <br> 
+      <h5 align="center" > For better experience go to the login page </h5>
+    </from>
+
+</div>
+
+   </div>
+  </div>
+</div>
+</body>
+</html>
